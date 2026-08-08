@@ -1,129 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prescron Privacy Policy</title>
-</head>
-
-<body>
-
-<h1>Prescron Privacy Policy</h1>
-
-<p><strong>Effective Date:</strong> August 9, 2026</p>
-
-<p>
-Prescron is a privacy-focused, offline document intelligence
-application designed to help you securely store, organize,
-search, understand, and interact with your documents directly
-on your Android device.
-</p>
-
-<!-- Continue the privacy policy here -->
-
-</body>
-</html>
-
-Don't worry about writing all that HTML yourself. I can generate the complete polished file for you.
-
-Step 4 — Enable GitHub Pages
-
-After saving privacy-policy.html:
-
-Go to:
-
-Repository → Settings → Pages
-
-Under Build and deployment:
-
-Source: Deploy from a branch
-
-Then select:
-
-Branch: main
-Folder: / (root)
-
-Click Save.
-
-GitHub will generate your website.
-
-Step 5 — Get your privacy-policy URL
-
-After GitHub Pages finishes deploying, you'll get an address similar to:
-
-https://YOUR-USERNAME.github.io/prescron-privacy/privacy-policy.html
-
-Open it in your browser and make sure the policy displays correctly.
-
-Step 6 — Put that URL into Google Play Console
-
-When Google Play asks for your Privacy Policy URL, paste the GitHub Pages URL.
-
-For example:
-
-https://YOUR-USERNAME.github.io/prescron-privacy/privacy-policy.html
-
-Don't use the GitHub repository URL itself.
-
-Use the actual GitHub Pages webpage.
-
-Recommended structure
-
-I would actually make your repository:
-
-prescron-privacy/
-│
-├── index.html
-├── privacy-policy.html
-└── README.md
-
-privacy-policy.html → your official legal policy.
-
-index.html → a simple Prescron landing page that links to the policy.
-
-README.md → optional GitHub project information.
-
-One important thing
-
-Before you publish the policy, I want to make sure it accurately matches your actual Prescron app. For example, if Prescron uses Firebase/Crashlytics, an online AI API, analytics, or Android backup, the policy needs to mention those.
-
-If you want the easiest route, I can generate the complete privacy-policy.html file for you now so you only have to upload it to GitHub.
-
-Pasted markdown(20260808-201605).md
-File
-
-give this as html
-
-Done. I created the complete, professionally formatted Prescron Privacy Policy HTML file, ready for GitHub Pages.
-
-Download privacy-policy.html
-
-Upload it to GitHub
-Open your GitHub repository.
-Click Add file → Upload files.
-Upload privacy-policy.html.
-Commit the file.
-Go to Settings → Pages.
-Select Deploy from a branch.
-Select main and / (root).
-Click Save.
-
-Your final URL will look like:
-
-https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/privacy-policy.html
-
-Use that URL in Google Play Console → App content → Privacy policy.
-
-Important: I included a couple of developer notes in the HTML regarding SDKs/analytics. Before publishing, remove those notes and verify the policy against your actual app's permissions, dependencies, backup configuration, and network behavior. 
-
-privacy-policy.html
-HTML
-
-privacy-policy.html
-privacy-policy.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Prescron Privacy Policy">
@@ -165,12 +42,32 @@ footer { text-align:center; color:var(--muted); padding:30px 20px 50px; }
   main { padding:20px 12px 45px; }
   .card { padding:21px; border-radius:14px; }
 }
+
+.brand {
+  display:flex;
+  align-items:center;
+  margin-bottom:28px;
+}
+.brand-logo {
+  display:block;
+  width:min(260px, 72vw);
+  height:auto;
+  background:#fff;
+  border-radius:14px;
+  padding:12px 18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
 </style>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
+
+    <div class="brand">
+      <img class="brand-logo" src="prescron-logo.png" alt="Prescron">
+    </div>
     <h1>Prescron Privacy Policy</h1>
     <p><strong>Effective Date:</strong> August 9, 2026</p>
     <p><strong>Last Updated:</strong> August 9, 2026</p>
